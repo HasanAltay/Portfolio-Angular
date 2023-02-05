@@ -1,0 +1,529 @@
+@media (min-width: 1600px) {
+
+  .content {
+    border-left: solid thin #21233D;
+    border-right: solid thin #21233D;
+      
+    .main {
+      .title {
+        right: 180px;
+        .title_child {
+          .name {
+            padding-right: unset;
+            font-size: 100px !important;
+          }
+          .jobtitle {
+            padding-right: unset;
+            font-size: 60px;
+          }
+          .iam {
+            text-indent: -10px;
+            font-size: 70px;
+          }
+        }
+      }
+    }
+}
+}
+
+@media (max-width: 1370px) {
+
+  // .title_child {
+  //   transform: scale(70%);
+  //   transform-origin: center top;
+  // }
+
+  // .title {  
+  //   left: unset;
+  //   right: 100px;
+  // }
+
+  .about_me_left {
+    .about_text {
+    margin-right: 40px;
+    }
+  }
+
+  .skills {
+    flex-direction: column-reverse;
+
+    .skills_button {
+      margin-bottom: 40px;
+    }
+
+    .skills_list {
+      width: unset;
+      justify-content: center;
+      margin-top: unset!important;
+    }
+
+    .skills_text {
+      width: unset;
+    }
+  }
+
+  .portfolio_list {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* for Internet Explorer, Edge */
+    overflow-y: scroll;
+    /* for Firefox */
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+  }
+
+
+
+  .content .navigation {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:unset!important;
+  }
+
+  .main {
+    .title {
+      right: -40px;
+    }
+
+    .portrait_over {
+      top: 0;
+      left: 10px;
+      bottom: unset;
+    }
+
+    .portrait {
+      top: 0;
+      left: 10px;
+      bottom: unset;
+    }
+  }
+
+    .scroll_down {
+      display: none;
+    }
+
+    .mail {
+      #email_adress {
+        visibility: hidden;
+      }
+    }
+
+  .about_me_right {
+    display: none;
+  }
+
+  .about_me_left {
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: unset;
+    padding-top: 160px;
+    .about_text {
+      align-items: unset;
+      margin-right: unset;
+      min-width: unset;
+      max-width: unset;
+    }
+  }
+
+  .skills { 
+    justify-content: center!important;
+    padding-left: unset !important;
+    .skills_list {
+      width: unset !important;
+      margin-top: unset !important;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .skills_text {
+      width: unset !important;
+    }
+  }
+
+  .color_line_green {
+    display: none;
+  }
+
+  .pl-100 {
+    padding-right: 50px;
+  }
+
+  .portfolio {
+    padding-left: unset;
+
+    .portf-title {
+      margin-left: unset;
+    }
+
+    .portfolio_list {
+      margin-top: unset;
+      margin-right: unset;
+      display: flex;
+      align-items: center;
+
+      .fix_right {
+        align-items: center;
+      }
+
+      .txt_block {
+        padding-top: unset;
+        text-align: center;
+        align-items: center;
+      }
+
+      .txt_block_right {
+        padding-top: unset;
+        text-align: center;
+
+      }
+
+      .portfolio_child {
+        flex-direction: column;
+
+        .pr-100_img {
+          padding-right: unset;
+        }
+      }
+
+      .portfolio_child_reverse {
+        flex-direction: column-reverse;
+        .pr-100_img {
+          padding-right: unset;
+        }
+      }
+
+      .purple_free {
+        left: -200px;
+        top: 480px;
+      }
+    }
+  }
+
+  .contact_main {
+    margin-bottom: 100px;
+    .purple_left {
+      top: unset;
+      width: 360px;
+      bottom: -210px;
+    }
+
+    .contact_child {
+      display: unset;
+
+      .contact_left {
+        width: unset;
+        margin-bottom: 30px;
+      }
+
+      .contact_right {
+        width: unset;
+        padding-left: 100px;
+      }
+    }
+  }
+
+  .footer {
+    height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    span {
+      font-size: 16px;
+    }
+
+    .up {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .mtop40 {
+    margin-top: -120px;
+  }
+
+  .line_mobile {
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+  }
+
+.content {
+  .purple_free {
+    top: 1200px!important;
+  }
+
+  .purple_right {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: -1;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    min-height: unset;
+    margin-top: 70px;
+
+    .mtop40 {
+      margin-top: 10px;
+    }
+
+    .line_box {
+      bottom: 0;
+      display: none;
+    }
+
+    .line_mobile {
+      top: 280px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 0px;
+      right: 0px;
+      top: unset;
+      bottom: 8%;
+
+      .btn {
+        display: none;
+      }
+
+      .title_child {
+        margin-bottom: 20px;
+        .name {
+          padding-right: unset;
+          font-size: 11vw;
+        }
+        .jobtitle {
+          padding-right: unset;
+          font-size: 6.5vw;
+        }
+        .iam {
+          text-indent: -4px;
+          font-size: 7.5vw;
+        }
+      }
+    }
+
+    .title_margin {
+      margin-bottom: 0px;
+    }
+
+    .portrait_over {
+      top: 180px;
+      left: 50%;
+      bottom: unset;
+      transform: translate(-50%, -50%);
+        img {
+          max-width: 200px;
+          max-height: 336px;
+          min-width: 200px;
+          min-height: 336px;
+        }
+    }
+
+    .portrait {
+      top: 180px;
+      left: 50%;
+      bottom: unset;
+      transform: translate(-50%, -50%);
+        img {
+          height: unset;
+          max-width: 200px;
+          max-height: 336px;
+          min-width: 200px;
+          min-height: 336px;
+        }
+    }
+  }
+
+  .navigation {
+    max-width: unset;
+    width: 100vw;
+    height: 70px;
+    right: 0;
+    background-color: #18243b;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .burger_icon {
+      display: flex;
+    }
+
+    .nav_links {
+      display: none;
+    }
+  }
+
+  .title {
+    top: unset;
+    bottom: 40px;
+  }
+
+  .about_me_left {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+
+    .about_text {
+      min-width: unset;
+
+      .title_txt {
+        font-size: 45px;
+        margin-bottom: 20px;
+      }
+
+      .subtitle_txt {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .skills {
+    padding-left: unset!important;
+    padding-bottom: unset!important;
+    .skills_list {
+      min-width: unset!important;
+      width: unset!important;
+    }
+
+    .skills_text {
+      justify-content: center!important;
+      width: unset !important;
+      .skills_setup {
+        font-size: 45px!important;
+        width: 77%!important;
+      }
+    }
+  }
+
+  .pl-100 {
+    padding-right: unset;
+  }
+
+  .portfolio {
+    margin-bottom: -800px;
+
+    .purple_free {
+      width: 300px;
+      left: 0;
+      top: 300px;
+    }
+
+    .portfolio_list {
+      transform: scale(75%);
+      transform-origin: top center;
+
+      .portfolio_child {
+        margin-bottom: 50px;
+      }
+
+      .portfolio_child_reverse {
+        margin-bottom: 50px;
+      }
+
+      .txt_block {
+        width: unset;
+      }
+
+      .txt_block_right {
+        width: unset;
+      }
+    }
+
+    .portf-title {
+      .title_txt {
+        font-size: 45px;
+        width: 80%;
+      }
+
+      .subtitle_txt {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .contact_main {
+    margin-bottom: 100px;
+    width: 100%;
+    .contact_titles {
+      margin-top: 100px;
+      margin-bottom: 50px;
+      span {
+        font-size: 45px;
+      }
+    }
+
+    .purple_left {
+      top: unset;
+      width: 300px;
+      bottom: -210px;
+    }
+
+    .contact_child {
+      display: unset;
+
+      .contact_left {
+        margin-bottom: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        .font32 {
+          font-size: 23px;
+        }
+      }
+
+      .contact_right {
+        width: unset;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .footer {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: unset;
+    padding-right: unset;
+
+    span {
+      font-size: 16px;
+    }
+
+    .up {
+      display: none;
+    }
+  }
+}
+}

@@ -1,0 +1,61 @@
+.content {
+  .background_glows {
+
+    .purple_right {
+      position: absolute;
+      right: 0;
+      top: 800px;
+      z-index: 1;
+      filter: opacity(80%);
+    }
+    
+    .green_left {
+      position: absolute;
+      left: 0px;
+      top: 2200px;
+      z-index: 0;
+      filter: opacity(80%);
+    }
+    
+    .purple_free {
+      position: absolute;
+      left: 0;
+      bottom: 1750px;
+      z-index: 0;
+      width: 70vw;
+      max-width: 800px;
+      filter: opacity(80%);
+    }
+    
+    .green_right {
+      position: absolute;
+      right: 0;
+      bottom: 1000px;
+      z-index: 0;
+      filter: opacity(80%);
+    }
+    
+    .purple_left {
+      position: absolute;
+      left: 0;
+      bottom: 200px;
+      z-index: 0;
+      width: 100%;
+      max-width: 400px;
+      filter: opacity(80%);
+    }
+
+    .background_dots {
+      padding: 30px;
+      position: absolute;
+      right: 0;
+      top: 2200px;
+      filter: opacity(2%);
+      width: 99%;
+      z-index: 0;
+    }
+
+
+  }
+}
+
