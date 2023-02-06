@@ -1,0 +1,36 @@
+<div class="content">
+
+  <div class="navigation">
+    <div class="logo" (click)="setActive(0); scrollToTop()">
+      <img src="../assets/img/logo.png" alt="Portfolio-Logo (HA.)"
+        data-aos="fade-down">
+    </div>
+
+    <div class="nav_links">
+      <div id="about_btn" (click)="setActive(1)">
+        <a href="#about_me">About me</a></div>
+      <div id="skills_btn" (click)="setActive(2)">
+        <a href="#skills">Skills</a></div>
+      <div id="portfolio_btn" (click)="setActive(3)">
+        <a href="#portfolio">Portfolio</a></div>
+    </div>
+
+    <div class="burger_icon">
+      <img src="../assets/img/icons/burger.png" alt="Mobile Navigation Icon">
+      <div class="burger_dropdown_menu" id="burger">
+        <div>
+          <div id="about_btn" onclick="HideOnClick()">
+            <a href="#about_me">About me</a></div>
+          <div id="skills_btn" onclick="HideOnClick()">
+            <a href="#skills">Skills</a></div>
+          <div id="portfolio_btn" onclick="HideOnClick()">
+            <a href="#portfolio">Portfolio</a></div>
+          <div id="portfolio_btn" onclick="HideOnClick()">
+            <a href="#contact">Contact</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

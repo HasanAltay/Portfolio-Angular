@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my Portfolio';
-  
+
   setActive(num: number) {
     const aboutBtn = document.getElementById('about_btn');
     const skillsBtn = document.getElementById('skills_btn');
@@ -60,40 +60,4 @@ export class AppComponent {
     return false;
   }
   
-  
-  // showBurger() {
-  //   const mobile = document.getElementById('burger');
-
-  //   if (mobile) {
-  //     mobile.className = 'nav_active';
-
-  //   if (mobile.style.display == 'flex') {
-  //     mobile.style.display = 'none';
-  
-  //   } else if (mobile.style.display = 'none') {
-  //     mobile.style.display = 'flex';
-  //   }
-  // }
-  // }
-  
-  
-  // HideOnClick() {
-  //   const mobile = document.getElementById('burger');
-  //   if (mobile) {
-  //     mobile.className = 'nav_active';
-
-  //     mobile.style.display = 'none';
-  //   }
-  // }
-
-
-  reload() {
-    setTimeout(function () {
-      location.reload()
-  }, 100);
-  }
-
-
-
-
 }
