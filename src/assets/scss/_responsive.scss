@@ -497,6 +497,24 @@
     span {
       font-size: 16px;
     }
+    .footer_child {
+      flex-direction: column;
+      img {
+        margin-right: unset;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .footer_links {
+        flex-direction: unset;
+      }
+    }
   }
 }
 

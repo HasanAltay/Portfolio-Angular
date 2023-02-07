@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "aos"
+           ],
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -94,7 +97,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/fonts.scss"
+              "src/fonts.css"
             ],
             "scripts": []
           }
