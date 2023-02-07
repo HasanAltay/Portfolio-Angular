@@ -1,5 +1,4 @@
 @media (min-width: 1600px) {
-
   .content {
     border-left: solid thin #21233D;
     border-right: solid thin #21233D;
@@ -27,16 +26,6 @@
 }
 
 @media (max-width: 1370px) {
-
-  // .title_child {
-  //   transform: scale(70%);
-  //   transform-origin: center top;
-  // }
-
-  // .title {  
-  //   left: unset;
-  //   right: 100px;
-  // }
 
   .about_me_left {
     .about_text {
@@ -81,8 +70,6 @@
     display: none;
     /* for Chrome, Safari, and Opera */
   }
-
-
 
   .content .navigation {
     padding-left: 30px;
@@ -309,17 +296,19 @@
 
       .title_child {
         margin-bottom: 20px;
+        padding-right: 5px;
         .name {
           padding-right: unset;
-          font-size: 11vw;
+          font-size: 10vw;
         }
         .jobtitle {
           padding-right: unset;
-          font-size: 6.5vw;
+          font-size: 6vw;
+          margin-top: unset;
         }
         .iam {
           text-indent: -4px;
-          font-size: 7.5vw;
+          font-size: 7.9vw;
         }
       }
     }
@@ -405,6 +394,7 @@
     .skills_list {
       min-width: unset!important;
       width: unset!important;
+      gap: 70px !important;
     }
 
     .skills_text {
@@ -422,18 +412,18 @@
   }
 
   .portfolio {
-    margin-bottom: -800px;
-
     .portfolio_list {
-      transform: scale(75%);
-      transform-origin: top center;
-
+      margin-top: -110px;
       .portfolio_child {
-        margin-bottom: 50px;
+        transform-origin: center;
+        transform: scale(75%);
+        margin-bottom: -120px;
       }
 
       .portfolio_child_reverse {
-        margin-bottom: 50px;
+        transform-origin: center;
+        transform: scale(75%);
+        margin-bottom: -120px;
       }
 
       .txt_block {

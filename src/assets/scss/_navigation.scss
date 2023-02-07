@@ -1,34 +1,35 @@
 .burger_dropdown_menu {
-  display: block;
-  // visibility: hidden;
-  flex-direction: column;
   position: fixed;
-  align-items: center;
-  justify-content: center;
   top: 70px;
   left: 0;
   right: 0;
   bottom: 0;
   height: 100vh;
-  background-color: #616161cb;
+  background-color: #444658;
   width: 100vw;
   color: white;
-  backdrop-filter: blur(16px);
   z-index: 98;
 
-  div {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 14vw;
-    margin-right: 10vw;
-  }
+  .burger_btns {
+    position: absolute;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    top: calc(50% - 70px);
+    left: 50%;
 
-  a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 9vw;
-    line-height: 120%;
+    div {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 7vw;
+    }
   }
 }
 
@@ -39,10 +40,6 @@
   display: none;
   background-color: transparent;
   border: 0;
-
-  // &: .burger_dropdown_menu {
-  //   visibility: visible;
-  // }
 }
 
 .navigation {

@@ -4,6 +4,10 @@
   line-height: 120%;
   margin-bottom: 40px;
   white-space: nowrap;
+  text-shadow: 
+  -1px 2px 1px hsl(0,0%,52%), 
+  -2px 4px 1px hsl(0,0%,54%), 
+  -3px 6px 1px hsl(0,0%,56%), 
 }
 
 .subtitle_txt {
@@ -56,55 +60,39 @@
 
     .title_child {
       display: flex;
+      padding-right: 70px;
     }
 
     .iam {
       font-weight: 400;
-      font-size: 5vw;
+      font-size: 5.3vw;
       writing-mode: vertical-lr;
       text-align: center;
       transform: rotate(-180deg);
       transform-origin: center center;
       text-indent: -8px;
+      text-shadow: 
+      -2px -1px 1px hsl(0,0%,52%), 
+      -4px -2px 1px hsl(0,0%,54%), 
+      -6px -3px 1px hsl(0,0%,56%), 
     }
 
     .name {
       font-weight: 700;
       font-size: 7vw;
-      line-height: 120%;
-      padding-right: 70px;
+      text-shadow: 
+      -1px 2px 1px hsl(0,0%,52%), 
+      -2px 4px 1px hsl(0,0%,54%), 
+      -3px 6px 1px hsl(0,0%,56%), 
     }
 
     .jobtitle {
+      margin-top: -10px;
       font-weight: 400;
-      font-size: 4.1vw;
-      line-height: 120%;
+      font-size: 4.2vw;
       color: $purple;
       background-clip: text;
-      padding-right: 70px;
-      -webkit-animation: glow 2s ease-in-out infinite alternate;
-      -moz-animation: glow 2s ease-in-out infinite alternate;
-      animation: glow 2s ease-in-out infinite alternate;
-
-      @-webkit-keyframes glow {
-        from {
-          text-shadow: 0 0 30px #00bee8a1, 0 0 40px rgba(0, 190, 232, 0.603), 0 0 50px #00bee873, 0 0 60px #00bee871, 0 0 70px #00bee870;
-        }
-
-        to {
-          text-shadow: 0 0 30px #181A31, 0 0 40px #181A31, 0 0 50px #181A31, 0 0 60px #181A31, 0 0 70px #181A31, 0 0 80px #181A31;
-        }
-      }
-
-      @keyframes glow {
-        from {
-          text-shadow: 0 0 30px #00bee870, 0 0 40px rgba(0, 190, 232, 0.432), 0 0 50px #00bee873, 0 0 60px #00bee871, 0 0 70px #00bee870;
-        }
-
-        to {
-          text-shadow: 0 0 30px #181A31, 0 0 40px #181A31, 0 0 50px #181A31, 0 0 60px #181A31, 0 0 70px #181A31, 0 0 80px #181A31;
-        }
-      }
+      text-shadow: #68B9EE 3px 1px 16px;
     }
 
   }
