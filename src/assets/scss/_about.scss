@@ -21,8 +21,8 @@
     img {
       display: flex;
       justify-content: first baseline;
-      align-items: center;
-      padding: 5px 30px 30px 30px;
+      align-items: flex-end;
+      padding: 5px 20px 20px 10px;
       height: 80px;
       transition: all 215ms ease-in-out;
       z-index: 4;

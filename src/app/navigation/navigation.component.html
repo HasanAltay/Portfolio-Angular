@@ -15,21 +15,24 @@
         <a href="#portfolio">Portfolio</a></div>
     </div>
 
-    <div class="burger_icon">
-      <img src="../assets/img/icons/burger.png" alt="Mobile Navigation Icon">
-      <div class="burger_dropdown_menu" id="burger">
+    <button class="burger_icon" id="burger_icon" (click)="toggleBurger()" type="checkbox">
+      <img src="../assets/img/icons/burger.png" alt="Mobile Navigation Icon" *ngIf="!isShown">
+      <img src="../assets/img/icons/close.png" alt="Mobile Navigation Icon" *ngIf="isShown">
+    </button>
+
+      <div *ngIf="isShown" class="burger_dropdown_menu" id="dop_down_menu">
         <div>
-          <div id="about_btn" onclick="HideOnClick()">
+          <div id="about_btn" (click)="hide()">
             <a href="#about_me">About me</a></div>
-          <div id="skills_btn" onclick="HideOnClick()">
+          <div id="skills_btn" (click)="hide()">
             <a href="#skills">Skills</a></div>
-          <div id="portfolio_btn" onclick="HideOnClick()">
+          <div id="portfolio_btn" (click)="hide()">
             <a href="#portfolio">Portfolio</a></div>
-          <div id="portfolio_btn" onclick="HideOnClick()">
+          <div id="portfolio_btn" (click)="hide()">
             <a href="#contact">Contact</a></div>
         </div>
       </div>
-    </div>
+    
 
   </div>
 

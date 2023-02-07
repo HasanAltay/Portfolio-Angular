@@ -106,10 +106,11 @@
 
 .up {
   position: absolute;
-  bottom: 381px;
-  right: 100px;
+  bottom: -150px;
+  right: 0px;
   cursor: pointer;
   transition: all 215ms ease-in-out;
+  z-index: 10;
 
   &:hover {
     transform: scale(1.2);

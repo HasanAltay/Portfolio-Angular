@@ -1,14 +1,22 @@
-<div class="content">
+<div class="content">  
+  
+  <div class="background_glows">
+    <img class="green_right" src="../assets/img/right_blue.png" alt="Glow in
+    Background">
+    <img class="purple_left" src="../assets/img/purple2.png" alt="Glow in
+    Background">
+  </div>
+
   <div class="footer">
-    <a class="up"><img src="../assets/img/icons/up.png" alt="scroll-up"
-        (click)="setActive(0); scrollToTop()"></a>
     <div class="footer_child">
       <a (click)="setActive(0)">
         <img src="../assets/img/logo.png">
       </a>
       <div class="footer_links">
-        <a routerLink="/imprint">Impressum</a>
-        <a routerLink="/datenschutz">Datenschutz</a>
+        <a routerLink="/imprint" routerLinkActive="active"
+          ariaCurrentWhenActive="page">Impressum</a>
+        <a routerLink="/datenschutz" routerLinkActive="active"
+          ariaCurrentWhenActive="page">Datenschutz</a>
       </div>
     </div>
     <div>
@@ -22,7 +30,7 @@
       <a href="mailto:altay.developer@posteo.de?subject=from_Portfolio">
         <img src="../assets/img/icons/mail.png" alt="Mail Icon">
       </a>
-      
+
       <a href="https://www.linkedin.com/in/hasanaltay"
         target="_blank">
         <img src="../assets/img/icons/linkedin.png" alt="Linkedin Icon">
@@ -30,5 +38,6 @@
     </div>
   </div>
 
-</div>
 
+
+</div>

@@ -201,20 +201,13 @@
           padding-right: unset;
         }
       }
-
-      .purple_free {
-        left: -200px;
-        top: 480px;
-      }
     }
   }
 
   .contact_main {
     margin-bottom: 100px;
-    .purple_left {
-      top: unset;
-      width: 360px;
-      bottom: -210px;
+    .up {
+      bottom: -60px;
     }
 
     .contact_child {
@@ -240,11 +233,16 @@
     span {
       font-size: 16px;
     }
-
-    .up {
-      display: none;
-    }
   }
+
+ .impressum_main {
+  padding: 30px!important;
+  margin-top: 90px!important;
+ }
+
+ .purple_left {
+  bottom: 150px!important;
+}
 }
 
 @media (max-width: 600px) {
@@ -268,10 +266,6 @@
   }
 
 .content {
-  .purple_free {
-    top: 1200px!important;
-  }
-
   .purple_right {
     position: absolute;
     right: 0;
@@ -430,12 +424,6 @@
   .portfolio {
     margin-bottom: -800px;
 
-    .purple_free {
-      width: 300px;
-      left: 0;
-      top: 300px;
-    }
-
     .portfolio_list {
       transform: scale(75%);
       transform-origin: top center;
@@ -471,6 +459,10 @@
   }
 
   .contact_main {
+    .up {
+      bottom: -70px;
+      margin-right: 20px;
+    }
     margin-bottom: 100px;
     width: 100%;
     .contact_titles {
@@ -479,12 +471,6 @@
       span {
         font-size: 45px;
       }
-    }
-
-    .purple_left {
-      top: unset;
-      width: 300px;
-      bottom: -210px;
     }
 
     .contact_child {
@@ -520,10 +506,11 @@
     span {
       font-size: 16px;
     }
-
-    .up {
-      display: none;
-    }
   }
 }
+
+.impressum_main {
+  padding: 20px!important;
+  margin-top: 80px!important;
+ }
 }

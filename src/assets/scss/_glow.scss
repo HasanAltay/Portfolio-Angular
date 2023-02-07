@@ -22,8 +22,8 @@
       left: 0;
       bottom: 1750px;
       z-index: 0;
-      width: 70vw;
-      max-width: 800px;
+      // min-width: 100px;
+      // max-width: 800px;
       filter: opacity(80%);
     }
     
@@ -38,7 +38,7 @@
     .purple_left {
       position: absolute;
       left: 0;
-      bottom: 200px;
+      bottom: 290px;
       z-index: 0;
       width: 100%;
       max-width: 400px;
