@@ -304,7 +304,7 @@
         .jobtitle {
           padding-right: unset;
           font-size: 6vw;
-          margin-top: unset;
+          margin-top: -5px;
         }
         .iam {
           text-indent: -4px;
@@ -460,6 +460,7 @@
       margin-bottom: 50px;
       span {
         font-size: 45px;
+        margin-left: 10px;
       }
     }
 
