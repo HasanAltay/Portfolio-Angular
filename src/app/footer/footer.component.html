@@ -13,10 +13,8 @@
         <img src="../assets/img/logo.png">
       </a>
       <div class="footer_links">
-        <a routerLink="/imprint" routerLinkActive="active"
-          ariaCurrentWhenActive="page">Impressum</a>
-        <a routerLink="/datenschutz" routerLinkActive="active"
-          ariaCurrentWhenActive="page">Datenschutz</a>
+        <a routerLink="/imprint" (click)="scrollToTop()">Impressum</a>
+        <a routerLink="/datenschutz" (click)="scrollToTop()">Datenschutz</a>
       </div>
     </div>
     <div>

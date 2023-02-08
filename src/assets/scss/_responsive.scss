@@ -295,31 +295,30 @@
         justify-content: center;
         left: 0px;
         right: 0px;
-        top: unset;
-        bottom: 8%;
+        top: 410px;
+        bottom: unset;
 
         .btn {
           display: none;
         }
 
         .title_child {
-          margin-bottom: 20px;
-          padding-right: 5px;
+          padding-right: 10px;
 
           .name {
             padding-right: unset;
-            font-size: 10vw;
+            font-size: 11.5vw;
           }
 
           .jobtitle {
             padding-right: unset;
-            font-size: 6vw;
+            font-size: 7vw;
             margin-top: -5px;
           }
 
           .iam {
             text-indent: -4px;
-            font-size: 7.9vw;
+            font-size: 9vw;
           }
         }
       }
@@ -409,6 +408,13 @@
         min-width: unset !important;
         width: unset !important;
         gap: 70px !important;
+
+        div {
+          font-weight: 400;
+        }
+        img {
+          width: 50px;
+        }
       }
 
       .skills_text {

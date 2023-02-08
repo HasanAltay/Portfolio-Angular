@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-protection.component.scss']
 })
 export class DataProtectionComponent {
-
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }
