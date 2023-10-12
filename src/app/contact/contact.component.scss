@@ -11,7 +11,7 @@
   .line_purple_left_contact {
     display: flex;
     align-items: center;
-    background-color: #9747FF;
+    background-color: $brightblue;
     width: 50px;
     height: 4px;
     border-radius: 0px 20px 20px 0px;
@@ -51,7 +51,7 @@
       height: 50px;
       width: 100%;
       background-color: unset;
-      border: 1px solid $purple;
+      border: 1px solid $brightblue;
       margin-bottom: 30px;
       color: white;
       font-family: "Poppins";
@@ -79,7 +79,7 @@
       min-height: 200px;
       max-height: 200px;
       background-color: unset;
-      border: 1px solid $purple;
+      border: 1px solid $brightblue;
       margin-bottom: 30px;
       color: white;
       font-family: "Poppins";

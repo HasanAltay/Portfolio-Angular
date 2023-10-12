@@ -10,52 +10,24 @@ import * as AOS from 'aos';
 export class AppComponent implements OnInit{
   title = 'my Portfolio';
 
-
   ngOnInit(): void {
     AOS.init()
   }
 
   setActive(num: number) {
-    const aboutBtn = document.getElementById('about_btn');
-    const skillsBtn = document.getElementById('skills_btn');
-    const portfolioBtn = document.getElementById('portfolio_btn');
+    const buttons = ['about_btn', 'skills_btn', 'portfolio_btn', 'contact_btn'];
 
-    if (aboutBtn) {
-      aboutBtn.className = 'nav_active';
-    
-    if (skillsBtn) {
-      skillsBtn.className = 'nav_active';
-
-    if (portfolioBtn) {
-      portfolioBtn.className = 'nav_active';
-    
-    if (num === 0) {
-      aboutBtn.className = '';
-      skillsBtn.className = '';
-      portfolioBtn.className = '';
+    for (let i = 0; i < buttons.length; i++) {
+      const button = document.getElementById(buttons[i]);
+      if (button) {
+        if (i + 1 === num) {
+          button.classList.add('nav_active');
+        } else {
+          button.classList.remove('nav_active');
+        }
+      }
     }
-
-    else if (num === 1) {
-      aboutBtn.className = 'nav_active';
-      skillsBtn.className = '';
-      portfolioBtn.className = '';
-    }
-
-    else if (num === 2) {
-      aboutBtn.className = '';
-      skillsBtn.className = 'nav_active';
-      portfolioBtn.className = '';
-    }
-
-    else if (num === 3) {
-      aboutBtn.className = '';
-      skillsBtn.className = '';
-      portfolioBtn.className = 'nav_active';
-    }
-
-  }}}
   }
-
 
   scrollToTop() {
     window.scrollTo(0, 0);
@@ -65,5 +37,4 @@ export class AppComponent implements OnInit{
     window.location.href='#contact'; 
     return false;
   }
-  
 }

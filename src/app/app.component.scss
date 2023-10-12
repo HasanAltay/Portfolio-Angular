@@ -4,6 +4,7 @@
 $bg_dark_blue: #141d2f;
 $light_blue: #1cdae6;
 $purple: #9747ff;
+$brightblue: #2a95ed;
 $green: #70e61c;
 $dark_blue_trans: rgba(20, 29, 47, 0.8);
 $lighter_blue: #00bee8;
@@ -37,28 +38,29 @@ $lighter_blue: #00bee8;
   z-index: 1;
 
   &:hover {
+    filter: brightness(120%);
     transition: all 215ms ease-in-out;
-    background-color: $purple;
-    box-shadow: 0 0 5px $purple;
-    text-shadow: 0 0 5px $purple;
+    background-color: $brightblue;
+    box-shadow: 0 0 5px $brightblue;
+    text-shadow: 0 0 5px $brightblue;
   }
 
   &:active {
     transition: none;
-    background-color: $purple;
+    background-color: $brightblue;
   }
 
   &::before {
-    content: '';
-    background: $purple;
-    transition: .5s;
-    transform: scale(.9);
+    content: "";
+    background: $brightblue;
+    transition: 0.5s;
+    transform: scale(0.9);
     z-index: -1;
   }
 
   &:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px $purple;
+    box-shadow: 0 0 15px $brightblue;
   }
 }
 
@@ -68,7 +70,7 @@ $lighter_blue: #00bee8;
   z-index: 3;
 
   .line_purple_left {
-    background-color: #9747FF;
+    background-color: $brightblue;
     width: 190px;
     height: 4px;
     border-radius: 0px 20px 20px 0px;
@@ -195,7 +197,7 @@ $lighter_blue: #00bee8;
       z-index: 1;
       filter: opacity(80%);
     }
-    
+
     .green_left {
       position: absolute;
       left: 0px;
@@ -203,7 +205,7 @@ $lighter_blue: #00bee8;
       z-index: 0;
       filter: opacity(80%);
     }
-    
+
     .purple_free {
       position: absolute;
       left: 0;
@@ -211,7 +213,7 @@ $lighter_blue: #00bee8;
       z-index: 0;
       filter: opacity(40%);
     }
-    
+
     .green_right {
       position: absolute;
       right: 0;
@@ -219,7 +221,7 @@ $lighter_blue: #00bee8;
       z-index: 0;
       filter: opacity(80%);
     }
-    
+
     .purple_left {
       position: absolute;
       left: 0;
@@ -228,16 +230,6 @@ $lighter_blue: #00bee8;
       width: 100%;
       max-width: 400px;
       filter: opacity(80%);
-    }
-
-    .background_dots {
-      padding: 30px;
-      position: absolute;
-      right: 0;
-      top: 2200px;
-      filter: opacity(2%);
-      width: 99%;
-      z-index: 0;
     }
   }
 }
@@ -289,23 +281,23 @@ $lighter_blue: #00bee8;
   border: none;
 
   &:hover {
-    background-color: $purple;
-    box-shadow: 0 0 5px $purple;
-    text-shadow: 0 0 5px $purple;
+    background-color: $brightblue;
+    box-shadow: 0 0 5px $brightblue;
+    text-shadow: 0 0 5px $brightblue;
     transform: scale(1.1);
     transition: all 215ms ease-in-out;
   }
 
   &:active {
     transition: none;
-    background-color: $purple;
+    background-color: $brightblue;
     transform: scale(1);
     transition: all 215ms ease-in-out;
   }
 
   &::before {
     content: "";
-    background: $purple;
+    background: $brightblue;
     transition: 0.5s;
     transform: scale(0.9);
     z-index: -1;
@@ -313,7 +305,7 @@ $lighter_blue: #00bee8;
 
   &:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px $purple;
+    box-shadow: 0 0 15px $brightblue;
   }
 }
 
@@ -326,7 +318,7 @@ $lighter_blue: #00bee8;
 }
 
 .impressum_main a {
-  color: #9747ff;
+  color: $brightblue;
   text-decoration: none;
   line-height: 120%;
 }
@@ -341,11 +333,10 @@ $lighter_blue: #00bee8;
 }
 
 //RESPONSIVE
-
 @media (min-width: 1600px) {
   .content {
-    border-left: solid thin #21233D;
-    border-right: solid thin #21233D;
+    border-left: solid thin #21233d;
+    border-right: solid thin #21233d;
 
     .main {
       .title {
@@ -373,7 +364,6 @@ $lighter_blue: #00bee8;
 }
 
 @media (max-width: 1370px) {
-
   .about_me_left {
     .about_text {
       margin-right: 40px;
@@ -404,7 +394,6 @@ $lighter_blue: #00bee8;
 }
 
 @media (max-width: 1024px) {
-
   body {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -521,7 +510,6 @@ $lighter_blue: #00bee8;
       .txt_block_right {
         padding-top: unset;
         text-align: center;
-
       }
 
       .portfolio_child {
@@ -585,7 +573,6 @@ $lighter_blue: #00bee8;
 }
 
 @media (max-width: 600px) {
-
   .mtop40 {
     margin-top: -120px;
   }

@@ -1,40 +1,57 @@
 <div class="content">
-
   <div class="navigation">
     <div class="logo" (click)="setActive(0); scrollToTop()">
-      <img src="../assets/img/logo.png" alt="Portfolio-Logo (HA.)"
-        data-aos="fade-down">
-      <span>hasan altay</span>
+      <img src="../assets/img/logo.png" alt="Logo" data-aos="fade-down" />
     </div>
 
     <div class="nav_links">
       <div id="about_btn" (click)="setActive(1)">
-        <a href="#about_me">About me</a></div>
+        <a href="#about_me">About</a>
+      </div>
       <div id="skills_btn" (click)="setActive(2)">
-        <a href="#skills">Skills</a></div>
+        <a href="#skills">Skills</a>
+      </div>
       <div id="portfolio_btn" (click)="setActive(3)">
-        <a href="#portfolio">Portfolio</a></div>
+        <a href="#portfolio">Portfolio</a>
+      </div>
+      <div id="contact_btn" (click)="setActive(4)">
+        <a href="#contact">Contact</a>
+      </div>
     </div>
 
-    <button class="burger_icon" id="burger_icon" (click)="toggleBurger()" type="checkbox">
-      <img src="../assets/img/icons/burger.png" alt="Mobile Navigation Icon" *ngIf="!isShown">
-      <img src="../assets/img/icons/close.png" alt="Mobile Navigation Icon" *ngIf="isShown">
+    <button
+      class="burger_icon"
+      id="burger_icon"
+      (click)="toggleBurger()"
+      type="checkbox"
+    >
+      <img
+        src="../assets/img/icons/burger.png"
+        alt="Mobile Navigation Icon"
+        *ngIf="!isShown"
+      />
+      <img
+        src="../assets/img/icons/close.png"
+        alt="Mobile Navigation Icon"
+        *ngIf="isShown"
+      />
     </button>
 
-      <div *ngIf="isShown" class="burger_dropdown_menu" id="dop_down_menu">
-        <div class="burger_btns">
-          <div id="about_btn" (click)="hide()">
-            <a href="#about_me">About me</a></div>
-          <div id="skills_btn" (click)="hide()">
-            <a href="#skills">Skills</a></div>
-          <div id="portfolio_btn" (click)="hide()">
-            <a href="#portfolio">Portfolio</a></div>
-          <div id="portfolio_btn" (click)="hide()">
-            <a href="#contact">Contact</a></div>
+    <div *ngIf="isShown" class="burger_dropdown_menu" id="dop_down_menu">
+      <div class="burger_btns">
+        <div id="about_btn" (click)="hide()">
+          <a href="#about_me">About me</a>
+        </div>
+        <div id="skills_btn" (click)="hide()">
+          <a href="#skills">Skills</a>
+        </div>
+        <div id="portfolio_btn" (click)="hide()">
+          <a href="#portfolio">Portfolio</a>
+        </div>
+        <div id="portfolio_btn" (click)="hide()">
+          <a href="#contact">Contact</a>
         </div>
       </div>
-    
-
+    </div>
   </div>
-
 </div>

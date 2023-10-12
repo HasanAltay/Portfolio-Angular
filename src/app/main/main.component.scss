@@ -1,4 +1,4 @@
-@import '../app.component.scss';
+@import "../app.component.scss";
 
 .title_txt {
   font-weight: 700;
@@ -17,7 +17,7 @@
 
 .main {
   position: relative;
-  background-image: url('/src/assets/img/background_glow.png');
+  background-image: url("/src/assets/img/background_glow.png");
   background-repeat: no-repeat;
   background-position: top(-30px) left;
   height: calc(100vh - 100px);
@@ -80,10 +80,9 @@
       margin-top: -10px;
       font-weight: 400;
       font-size: 4.2vw;
-      color: $purple;
+      color: $brightblue;
       background-clip: text;
     }
-
   }
 }
 
@@ -98,7 +97,7 @@
   z-index: 1;
   width: 100%;
   object-fit: fill;
-  background-image: url('/src/assets/img/line.png');
+  background-image: url("/src/assets/img/line.png");
   background-repeat: round;
   background-size: cover;
 }
@@ -124,23 +123,23 @@
 
   @keyframes scroll_it {
     0% {
-      transform: rotate(90deg) translateX(px)
+      transform: rotate(90deg) translateX(px);
     }
 
     25% {
-      transform: rotate(90deg) translateX(-35px)
+      transform: rotate(90deg) translateX(-35px);
     }
 
     50% {
-      transform: rotate(90deg) translateX(0px)
+      transform: rotate(90deg) translateX(0px);
     }
 
     75% {
-      transform: rotate(90deg) translateX(-35px)
+      transform: rotate(90deg) translateX(-35px);
     }
 
     100% {
-      transform: rotate(90deg) translateX(0)
+      transform: rotate(90deg) translateX(0);
     }
   }
 }

@@ -76,7 +76,7 @@
       &:after {
         content: "";
         flex: 1 1;
-        border-bottom: 4px solid $purple;
+        border-bottom: 4px solid $brightblue;
         margin: auto;
         border-radius: 5px;
       }
@@ -100,21 +100,21 @@
       &:hover {
         transform: scale(1.1);
         transition: all 215ms ease-in-out;
-        background-color: $purple;
-        box-shadow: 0 0 5px $purple;
-        text-shadow: 0 0 5px $purple;
+        background-color: $brightblue;
+        box-shadow: 0 0 5px $brightblue;
+        text-shadow: 0 0 5px $brightblue;
       }
     
       &:active {
         transition: none;
-        background-color: $purple;
+        background-color: $brightblue;
         transform: scale(1);
         transition: all 215ms ease-in-out;
       }
     
       &::before {
         content: '';
-        background: $purple;
+        background: $brightblue;
         transition: .5s;
         transform: scale(.9);
         z-index: -1;
@@ -122,7 +122,7 @@
     
       &:hover::before {
         transform: scale(1.1);
-        box-shadow: 0 0 15px $purple;
+        box-shadow: 0 0 15px $brightblue;
       }
     }
   }
