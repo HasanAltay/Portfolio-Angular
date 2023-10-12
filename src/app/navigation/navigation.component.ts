@@ -6,6 +6,7 @@ import { AppComponent } from '../app.component';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
+
 export class NavigationComponent {
 
   constructor(private appComponent: AppComponent) { }
