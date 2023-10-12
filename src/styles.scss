@@ -1,24 +1,5 @@
-@import "./assets/scss/variables";
-@import "./assets/scss/fonts";
-@import "./assets/scss/about";
-@import "./assets/scss/buttons";
-@import "./assets/scss/contact";
-@import "./assets/scss/footer";
-@import "./assets/scss/global";
-@import "./assets/scss/glow";
-@import "./assets/scss/main";
-@import "./assets/scss/navigation";
-@import "./assets/scss/portfolio";
-@import "./assets/scss/responsive";
-@import "./assets/scss/skills";
-@import "../node_modules/aos/src/sass/aos.scss";
-
-$bg_dark_blue: #141d2f;
-$light_blue: #1cdae6;
-$purple: #9747ff;
-$green: #70e61c;
-$dark_blue_trans: rgba(20, 29, 47, 0.8);
-$lighter_blue: #00bee8;
+@import '/src/fonts.scss';
+@import '/src/app/app.component.scss';
 
 * {
   box-sizing: border-box;
@@ -28,12 +9,12 @@ $lighter_blue: #00bee8;
   user-select: none;
 
   /* Firefox */
-  scrollbar-width: auto;
-  scrollbar-color: #9747ff;
+  scrollbar-width: 8px;
+  scrollbar-color: #2A95ED;
 
   /* WebKit */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     background-color: transparent;
   }
 
@@ -42,7 +23,7 @@ $lighter_blue: #00bee8;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #9747ff;
+    background-color: #2A95ED;
     border-radius: 4px;
   }
 
@@ -50,8 +31,7 @@ $lighter_blue: #00bee8;
   -ms-overflow-style: auto;
 }
 
-body,
-html {
+body, html {
   margin: 0 auto;
   background-color: $bg_dark_blue;
   color: white;
@@ -60,101 +40,4 @@ html {
   align-items: center;
   overflow-x: hidden;
   font-family: "Poppins";
-}
-
-.content {
-  position: relative;
-  height: 100%;
-}
-
-.success_main {
-  margin: 0 auto;
-  font-weight: 700;
-  line-height: 120%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 8vw;
-}
-
-.success_main span {
-  text-align: center;
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
-
-.success_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  img {
-    margin-top: 10vw;
-  }
-}
-
-.btn {
-  width: fit-content;
-  padding: 15px 30px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: $lighter_blue;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 120%;
-  cursor: pointer;
-  color: white;
-  transition: all 215ms ease-in-out;
-  border: none;
-
-  &:hover {
-    background-color: $purple;
-    box-shadow: 0 0 5px $purple;
-    text-shadow: 0 0 5px $purple;
-    transform: scale(1.1);
-    transition: all 215ms ease-in-out;
-  }
-
-  &:active {
-    transition: none;
-    background-color: $purple;
-    transform: scale(1);
-    transition: all 215ms ease-in-out;
-  }
-
-  &::before {
-    content: "";
-    background: $purple;
-    transition: 0.5s;
-    transform: scale(0.9);
-    z-index: -1;
-  }
-
-  &:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px $purple;
-  }
-}
-
-.impressum_main {
-  margin-top: 10px;
-  padding: 100px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 120%;
-}
-
-.impressum_main a {
-  color: #9747ff;
-  text-decoration: none;
-  line-height: 120%;
-}
-
-.impressum_main h1 {
-  line-height: 120%;
-  margin-top: 60px;
-}
-
-.impressum_main h2 {
-  line-height: 120%;
 }
