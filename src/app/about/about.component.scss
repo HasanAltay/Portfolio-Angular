@@ -1,5 +1,10 @@
 @import '../app.component.scss';
 
+.content {
+  position: relative;
+  height: 100%;
+}
+
 .about_me_left {
   position: relative;
   display: flex;
@@ -15,7 +20,19 @@
     min-width: 500px;
     max-width: 500px;
     margin-right: 140px;
-    margin-top: 80px;
+    margin-top: 30px;
+
+    .title {
+      font-weight: 700;
+      font-size: 90px;
+      line-height: 120%;
+      margin-bottom: 40px;
+    }
+
+    .subtitle {
+      margin-bottom: 20px;
+    }
+
   }
 
   .double_row {
@@ -50,6 +67,19 @@
     border: solid 4px $lighter_blue;
     height: 350px;
     width: 350px;
+  }
+}
+
+.color_line_green {
+  display: flex;
+  flex-direction: row;
+
+
+  &:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 4px solid $lighter_blue;
+    margin: auto;
   }
 }
 

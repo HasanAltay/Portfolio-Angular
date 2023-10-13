@@ -1,5 +1,23 @@
-<div class="content">
+<div class="skills_main">
+  <img
+    class="green_left"
+    src="../assets/img/left_blue.png"
+    alt=""
+  />
   <div class="skills" id="skills">
+    <span class="title color_line_purple" data-aos="flip-down">
+      &nbsp;My Skills&nbsp;
+    </span>
+
+    <span class="subtitle_txt">
+      I have gained experience in building projects<br />
+      with various front end technologies and concepts.
+    </span>
+
+    <div class="btn mtop40" (click)="scrollToContact(); setActive(0)">
+      Get in touch
+    </div>
+
     <div class="skills_list">
       <div class="skill_1" data-aos="zoom-in" data-aos-delay="0">
         <img
@@ -43,17 +61,6 @@
           class="Material Desin Icon"
         />Material<br />Design
       </div>
-    </div>
-
-    <div class="skills_text">
-      <a class="skills_setup" data-aos="flip-down">My skills&nbsp;</a>
-      <span class="subtitle_txt pl-100 center" id="skills_child"
-        >I have gained experience in building projects<br />
-        with various front end technologies and concepts.
-        <div class="skills_button" (click)="scrollToContact(); setActive(0)">
-          Get in touch
-        </div>
-      </span>
     </div>
   </div>
 </div>

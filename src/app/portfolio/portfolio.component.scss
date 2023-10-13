@@ -1,4 +1,9 @@
-@import '../app.component.scss';
+@import "../app.component.scss";
+
+.content {
+  position: relative;
+  height: 100%;
+}
 
 .portfolio {
   position: relative;
@@ -10,10 +15,19 @@
   z-index: 10;
 }
 
-.portf-title {
+// .portf-title {
+//   display: flex;
+//   flex-direction: column;
+//   margin-left: 28%;
+// }
+
+.title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 120%;
+  margin-bottom: 40px;
   display: flex;
-  flex-direction: column;
-  margin-left: 28%;
+  align-items: center;
 }
 
 .color_line_purple {
@@ -22,7 +36,6 @@
 
   &:before,
   &:after {
-
     content: "";
     flex: 1 1;
     border-bottom: 4px solid $brightblue;
@@ -34,7 +47,6 @@
 .color_line_green {
   display: flex;
   flex-direction: row;
-
 
   &:after {
     content: "";
@@ -90,7 +102,7 @@
     font-weight: 400;
     font-size: 23px;
     line-height: 120%;
-    color: $green;
+    color: $light_blue;
     margin-bottom: 15px;
   }
 
@@ -107,9 +119,9 @@
 
   .portf_btns {
     display: flex;
-    width: 350px;
+    width: 330px;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 25px;
 
     a {
       color: white;
@@ -121,19 +133,21 @@
       width: fit-content;
       padding: 15px 30px;
       border-radius: 10px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
       background-color: $brightblue;
       font-weight: 400;
       font-size: 23px;
       line-height: 120%;
       cursor: pointer;
       transition: all 215ms ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
       &:hover {
         transition: all 215ms ease-in-out;
-        background-color: $green;
-        box-shadow: 0 0 5px $green;
-        text-shadow: 0 0 5px $green;
+        background-color: $light_blue;
+        box-shadow: 0 0 5px $light_blue;
+        text-shadow: 0 0 5px $light_blue;
       }
 
       &:active {
@@ -142,37 +156,40 @@
       }
 
       &::before {
-        content: '';
-        background: $green;
-        transition: .5s;
-        transform: scale(.9);
+        content: "";
+        background: $light_blue;
+        transition: 0.5s;
+        transform: scale(0.9);
         z-index: -1;
       }
 
       &:hover::before {
         transform: scale(1.1);
-        box-shadow: 0 0 15px $green;
+        box-shadow: 0 0 15px $light_blue;
       }
-
     }
 
     .portfolio_btn_bright {
+      width: -moz-fit-content;
       width: fit-content;
       padding: 15px 30px;
       border-radius: 10px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border: 1px solid $green;
+      background-color: $lavender;
+      // border: 1px solid $green;
       font-weight: 400;
       font-size: 23px;
       line-height: 120%;
       cursor: pointer;
       transition: all 215ms ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
       &:hover {
         transition: all 215ms ease-in-out;
-        background-color: $green;
-        box-shadow: 0 0 5px $green;
-        text-shadow: 0 0 5px $green;
+        background-color: $light_blue;
+        box-shadow: 0 0 5px $light_blue;
+        text-shadow: 0 0 5px $light_blue;
       }
 
       &:active {
@@ -181,17 +198,17 @@
       }
 
       &::before {
-        content: '';
-        background: $green;
-        transition: .5s;
-        transform: scale(.9);
+        content: "";
+        background: $light_blue;
+        transition: 0.5s;
+        transform: scale(0.9);
         z-index: -1;
       }
 
       &:hover::before {
         transform: scale(1.1);
-        box-shadow: 0 0 15px $green;
-      }
+        box-shadow: 0 0 15px $light_blue;
       }
     }
   }
+}

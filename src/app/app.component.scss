@@ -1,6 +1,5 @@
 @import "../../node_modules/aos/src/sass/aos.scss";
 
-// COLOR VARIABLES
 $bg_dark_blue: #141d2f;
 $light_blue: #1cdae6;
 $purple: #9747ff;
@@ -8,8 +7,15 @@ $brightblue: #2a95ed;
 $green: #70e61c;
 $dark_blue_trans: rgba(20, 29, 47, 0.8);
 $lighter_blue: #00bee8;
+$complementary_orange: #ffa500;
+$light_gray: #dddddd;
+$mint_green: #7fff7f;
+$lavender: #8d76aa;
+$coral: #ff5555;
+$teal: #005050;
 
-// PRESET BUTTONS
+//  <--- PRESET BUTTONS ----------------------------------->
+
 .btn_pos {
   position: absolute;
   top: 220px;
@@ -26,23 +32,23 @@ $lighter_blue: #00bee8;
   width: fit-content;
   padding: 15px 30px;
   border-radius: 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: $lighter_blue;
   font-weight: 400;
   font-size: 23px;
   line-height: 120%;
-  cursor: pointer;
-  color: white;
-  transition: all 215ms ease-in-out;
+  color:white;
   border: none;
-  z-index: 1;
+  cursor: pointer;
+  transition: all 215ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   &:hover {
-    filter: brightness(120%);
     transition: all 215ms ease-in-out;
-    background-color: $brightblue;
-    box-shadow: 0 0 5px $brightblue;
-    text-shadow: 0 0 5px $brightblue;
+    background-color: $light_blue;
+    box-shadow: 0 0 5px $light_blue;
+    text-shadow: 0 0 5px $light_blue;
   }
 
   &:active {
@@ -52,7 +58,7 @@ $lighter_blue: #00bee8;
 
   &::before {
     content: "";
-    background: $brightblue;
+    background: $light_blue;
     transition: 0.5s;
     transform: scale(0.9);
     z-index: -1;
@@ -60,7 +66,7 @@ $lighter_blue: #00bee8;
 
   &:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px $brightblue;
+    box-shadow: 0 0 15px $light_blue;
   }
 }
 
@@ -99,7 +105,8 @@ $lighter_blue: #00bee8;
   }
 }
 
-//GLOBALS
+//  <--- GLOBALS ----------------------------------->
+
 .alink {
   text-decoration: none;
   color: white;
@@ -187,7 +194,8 @@ $lighter_blue: #00bee8;
   margin-bottom: 60px;
 }
 
-//GLOW
+// <--- BACKGROUND-GLOW ---------------------------->
+
 .content {
   .background_glows {
     .purple_right {
@@ -198,13 +206,13 @@ $lighter_blue: #00bee8;
       filter: opacity(80%);
     }
 
-    .green_left {
-      position: absolute;
-      left: 0px;
-      top: 2200px;
-      z-index: 0;
-      filter: opacity(80%);
-    }
+    // .green_left {
+    //   position: absolute;
+    //   left: 0px;
+    //   top: 1700px;
+    //   z-index: 0;
+    //   filter: opacity(80%);
+    // }
 
     .purple_free {
       position: absolute;
@@ -234,11 +242,7 @@ $lighter_blue: #00bee8;
   }
 }
 
-//DATA PROTECTION AND IMPRINT
-.content {
-  position: relative;
-  height: 100%;
-}
+//  <--- DATA PROTECTION AND IMPRINT ----------------------------------->
 
 .success_main {
   margin: 0 auto;
@@ -266,49 +270,6 @@ $lighter_blue: #00bee8;
   }
 }
 
-.btn {
-  width: fit-content;
-  padding: 15px 30px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: $lighter_blue;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 120%;
-  cursor: pointer;
-  color: white;
-  transition: all 215ms ease-in-out;
-  border: none;
-
-  &:hover {
-    background-color: $brightblue;
-    box-shadow: 0 0 5px $brightblue;
-    text-shadow: 0 0 5px $brightblue;
-    transform: scale(1.1);
-    transition: all 215ms ease-in-out;
-  }
-
-  &:active {
-    transition: none;
-    background-color: $brightblue;
-    transform: scale(1);
-    transition: all 215ms ease-in-out;
-  }
-
-  &::before {
-    content: "";
-    background: $brightblue;
-    transition: 0.5s;
-    transform: scale(0.9);
-    z-index: -1;
-  }
-
-  &:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px $brightblue;
-  }
-}
-
 .impressum_main {
   margin-top: 10px;
   padding: 100px;
@@ -332,12 +293,10 @@ $lighter_blue: #00bee8;
   line-height: 120%;
 }
 
-//RESPONSIVE
+//  <--- RESPONSIVE ----------------------------------->
+
 @media (min-width: 1600px) {
   .content {
-    border-left: solid thin #21233d;
-    border-right: solid thin #21233d;
-
     .main {
       .title {
         right: 180px;
@@ -370,23 +329,23 @@ $lighter_blue: #00bee8;
     }
   }
 
-  .skills {
-    flex-direction: column-reverse;
+  // .skills {
+  //   flex-direction: column-reverse;
 
-    .skills_button {
-      margin-bottom: 40px;
-    }
+  //   .skills_button {
+  //     margin-bottom: 40px;
+  //   }
 
-    .skills_list {
-      width: unset;
-      justify-content: center;
-      margin-top: unset !important;
-    }
+  //   .skills_list {
+  //     width: unset;
+  //     justify-content: center;
+  //     margin-top: unset !important;
+  //   }
 
-    .skills_text {
-      width: unset;
-    }
-  }
+  //   .skills_text {
+  //     width: unset;
+  //   }
+  // }
 
   .portfolio_list {
     margin-right: 30px;
@@ -460,21 +419,21 @@ $lighter_blue: #00bee8;
     }
   }
 
-  .skills {
-    justify-content: center !important;
-    padding-left: unset !important;
+  // .skills {
+  //   justify-content: center !important;
+  //   padding-left: unset !important;
 
-    .skills_list {
-      width: unset !important;
-      margin-top: unset !important;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+  //   .skills_list {
+  //     width: unset !important;
+  //     margin-top: unset !important;
+  //     padding-left: 30px;
+  //     padding-right: 30px;
+  //   }
 
-    .skills_text {
-      width: unset !important;
-    }
-  }
+  //   .skills_text {
+  //     width: unset !important;
+  //   }
+  // }
 
   .color_line_green {
     display: none;

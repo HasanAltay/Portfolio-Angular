@@ -1,77 +1,93 @@
-@import '../app.component.scss';
+@import "../app.component.scss";
 
-.skills {
-  position: relative;
+.skills_main {
   display: flex;
-  justify-content: space-between;
-  padding-top: 100px;
-  padding-left: 100px;
-  padding-bottom: 200px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 
-  .skills_list {
+  .green_left {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    filter: opacity(80%);
+  }
+
+  .skills {
     display: flex;
-    width: 800px;
-    min-width: 500px;
-    flex-wrap: wrap;
-    gap: 100px;
-    margin-top: 160px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    width: 100%;
 
-    div {
+    .skills_list {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      width: 90px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 120%;
-    }
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 80px;
+      margin-top: 80px;
+      max-width: 800px;
 
-    img {
-      margin-bottom: 10px;
-      &:hover {
-        animation: shake_it 333ms normal forwards ease-in-out;
-        @keyframes shake_it {
-          0% {
-            transform: translateY(0)
-          }
-          25% {
-            transform: translateY(-15px)
-          }
-          50% {
-            transform: translateY(0px)
-          }
-          75% {
-            transform: translateY(-15px)
-          }
-          100% {
-            transform: translateY(0)
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+      }
+
+      img {
+        width: 48px;
+        margin-bottom: 10px;
+        &:hover {
+          animation: shake_it 333ms normal forwards ease-in-out;
+          @keyframes shake_it {
+            0% {
+              transform: translateY(0);
+            }
+            25% {
+              transform: translateY(-15px);
+            }
+            50% {
+              transform: translateY(0px);
+            }
+            75% {
+              transform: translateY(-15px);
+            }
+            100% {
+              transform: translateY(0);
+            }
           }
         }
       }
     }
-  }
 
-  .skills_text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: center;
-  
-    span {
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-
-    .skills_setup {
-      width: 500px;
+    .title {
       font-weight: 700;
       font-size: 90px;
       line-height: 120%;
       margin-bottom: 40px;
       display: flex;
-      flex-direction: row;
+      align-items: center;
+    }
+
+    .color_line_purple {
+      display: flex;
+      width: 100%;
+
+      &:before {
+        content: "";
+        flex: 1 1;
+        margin: auto;
+      }
 
       &:after {
         content: "";
@@ -79,50 +95,6 @@
         border-bottom: 4px solid $brightblue;
         margin: auto;
         border-radius: 5px;
-      }
-    }
-
-    .skills_button {
-      margin-top: 60px;
-      width: -moz-fit-content;
-      width: fit-content;
-      padding: 15px 30px;
-      border-radius: 10px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      background-color: $lighter_blue;
-      font-weight: 400;
-      font-size: 23px;
-      line-height: 120%;
-      cursor: pointer;
-      color: white;
-      transition: all 215ms ease-in-out;
-
-      &:hover {
-        transform: scale(1.1);
-        transition: all 215ms ease-in-out;
-        background-color: $brightblue;
-        box-shadow: 0 0 5px $brightblue;
-        text-shadow: 0 0 5px $brightblue;
-      }
-    
-      &:active {
-        transition: none;
-        background-color: $brightblue;
-        transform: scale(1);
-        transition: all 215ms ease-in-out;
-      }
-    
-      &::before {
-        content: '';
-        background: $brightblue;
-        transition: .5s;
-        transform: scale(.9);
-        z-index: -1;
-      }
-    
-      &:hover::before {
-        transform: scale(1.1);
-        box-shadow: 0 0 15px $brightblue;
       }
     }
   }

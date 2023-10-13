@@ -1,5 +1,10 @@
 @import '../app.component.scss';
 
+.content {
+  position: relative;
+  height: 100%;
+}
+
 .burger_dropdown_menu {
   position: fixed;
   top: 70px;
@@ -45,7 +50,7 @@
 
 .navigation {
   position: fixed;
-  max-width: 1920px;
+  max-width: 2560px;
   margin: 0 auto;
   width: 100vw;
   top: 0;
@@ -59,8 +64,6 @@
   height: 100px;
   z-index: 99;
   background-color: $bg_dark_blue;
-  border-left: solid thin #21233D;
-  border-right: solid thin #21233D;
 
   .nav_links {
     display: flex;
