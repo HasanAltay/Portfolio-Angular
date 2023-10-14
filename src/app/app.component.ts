@@ -11,7 +11,15 @@ export class AppComponent implements OnInit{
   title = 'my Portfolio';
 
   ngOnInit(): void {
-    AOS.init()
+    AOS.init(
+      {
+        delay: 100,
+        duration: 800,
+        offset: 500,
+
+      }
+    );
+    this.scrollToTop();
   }
 
   setActive(num: number) {

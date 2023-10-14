@@ -290,70 +290,10 @@ $teal: #005050;
 
 //  <--- RESPONSIVE ----------------------------------->
 
-@media (min-width: 1600px) {
-  .content {
-    .main {
-      .title {
-        right: 180px;
-
-        .title_child {
-          .name {
-            padding-right: unset;
-            font-size: 100px !important;
-          }
-
-          .jobtitle {
-            padding-right: unset;
-            font-size: 60px;
-          }
-
-          .iam {
-            text-indent: -10px;
-            font-size: 70px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1370px) {
-  .about_me_left {
-    .about_text {
-      margin-right: 40px;
-    }
-  }
-
-  // .skills {
-  //   flex-direction: column-reverse;
-
-  //   .skills_button {
-  //     margin-bottom: 40px;
-  //   }
-
-  //   .skills_list {
-  //     width: unset;
-  //     justify-content: center;
-  //     margin-top: unset !important;
-  //   }
-
-  //   .skills_text {
-  //     width: unset;
-  //   }
-  // }
-
-  .portfolio_list {
-    margin-right: 30px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-  .scroll_down {
-    display: none !important;
-  }
-
-  .profile_image {
-    left: -100px !important;
+  .eyecatcher {
+    right: 40px !important;
+    bottom: 40px !important;
   }
 
   .line_box {
@@ -363,25 +303,18 @@ $teal: #005050;
   .main {
     background-size: contain !important;
     background-position: bottom left !important;
+
     .title {
-      position: absolute;
-      right: 60px !important;
-
-      .btn {
-        display: none;
-      }
-
-      .title_child {
-        padding-right: 0px !important;
-      }
+      width: 30vw !important;
 
       .name {
-        font-size: 4vw !important;
+        font-size: 55px !important;
       }
 
       .jobtitle {
-        margin-top: -10px;
-        font-size: 2.4vw !important;
+        margin-top: -25px !important;
+        font-weight: 400;
+        font-size: 35px !important;
         color: $brightblue;
         background-clip: text;
       }
@@ -394,16 +327,6 @@ $teal: #005050;
     margin: unset !important;
   }
 
-  .scroll_down {
-    display: none;
-  }
-
-  .mail {
-    #email_adress {
-      visibility: hidden;
-    }
-  }
-
   .about_me_left {
     .about_text {
       margin-right: 40px !important;
@@ -414,10 +337,6 @@ $teal: #005050;
     align-items: center !important;
     justify-content: center !important;
   }
-
-  // .pl-100 {
-  //   padding-right: 50px;
-  // }
 
   .portfolio-content {
     .portfolio {
@@ -555,7 +474,14 @@ $teal: #005050;
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {
+  .eyecatcher {
+    right: 20px !important;
+    bottom: 50% !important;
+  }
+
   .design_element {
     img {
       width: min-content !important;
@@ -578,8 +504,8 @@ $teal: #005050;
       bottom: 20px !important;
       top: unset !important;
 
-      .title_child {
-        padding-right: 0px !important;
+      .btn {
+        display: none;
       }
 
       .name {
@@ -597,11 +523,11 @@ $teal: #005050;
     display: none !important;
   }
 
-  .about_me_left { 
+  .about_me_left {
     .about_text {
       margin-right: 0px !important;
       .title {
-        font-size: 60px!important;
+        font-size: 60px !important;
       }
     }
   }
@@ -706,10 +632,6 @@ $teal: #005050;
       top: unset;
       bottom: 40px;
     }
-
-    // .pl-100 {
-    //   padding-right: unset;
-    // }
 
     .contact_main {
       .up {

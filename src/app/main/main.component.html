@@ -1,35 +1,26 @@
 <div class="content">
-
-  <div class="design_element">
-    <img src="/assets/img/line.png" alt=""/>
+  <div class="main_bg_glow">
+    <img src="../assets/img/background_glow.png" alt="" />
   </div>
-
+  <div class="design_element">
+    <img src="/assets/img/line.png" alt="" />
+  </div>
   <div class="profile_image">
     <img src="../assets/img/profile.webp" alt="" />
   </div>
 
   <div class="main" id="main">
-    <!-- <div class="portrait">
-      <img src="../assets/img/photo_free.png" alt="my_photo" />
-    </div>
-    <div class="portrait_over">
-      <img src="../assets/img/photo_free_over.png" alt="my_photo_2" />
-    </div> -->
-    <div class="title title_margin">
-      <div class="title_child">
-        <!-- <div class="iam">I am</div> -->
-        <div id="scene">
-          <div class="name">Hasan Altay</div>
-          <div class="jobtitle">FRONTEND DEVELOPER</div>
-        </div>
-      </div>
-
+    <div class="title">
+      <div class="name">Hasan Altay</div>
+      <div class="jobtitle">WEB DEVELOPER</div>
       <div class="btn mtop40" (click)="scrollToContact(); setActive(0)">
         Let's talk!
       </div>
     </div>
 
-    <div class="line_box">
+    <div class="line_box" data-aos="fade-right"
+    data-aos-offset="0"
+    data-aos-easing="ease-in-sine">
       <div class="mail" id="mail">
         <div class="other_links">
           <div class="line_purple_left"></div>
@@ -46,10 +37,21 @@
       </div>
     </div>
 
-    <div class="scroll_down">
-      <i>Scroll down</i
-      ><img src="../assets/img/icons/arrow.png" alt="Scroll Down Eyecatcher" />
+    <div
+      class="eyecatcher"
+      data-aos="fade-in"
+      data-aos-easing="linear"
+      data-aos-duration="800"
+      data-aos-offset="0"
+      data-aos-delay="3000"
+      data-aos-once="true"
+
+    >
+      <div class="scrollbar_border">
+        <div class="scrollbar"></div>
+      </div>
     </div>
+
   </div>
 
   <div class="background_glows">
