@@ -1,26 +1,29 @@
-@import '../app.component.scss';
+@import "../app.component.scss";
 
-.content {
+.about_content {
   position: relative;
-  height: 100%;
+  padding-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .about_me_left {
   position: relative;
   display: flex;
-  height: 100%;
   z-index: 4;
-  padding-top: 100px;
   padding-left: 100px;
-  padding-bottom: 200px;
+  width: 55%;
+  justify-content: right;
 
   .about_text {
     display: flex;
     flex-direction: column;
-    min-width: 500px;
-    max-width: 500px;
-    margin-right: 140px;
-    margin-top: 30px;
+    padding-bottom: 40px;
+    min-width: 460px;
+    max-width: 560px;
 
     .title {
       font-weight: 700;
@@ -32,7 +35,6 @@
     .subtitle {
       margin-bottom: 20px;
     }
-
   }
 
   .double_row {
@@ -58,9 +60,10 @@
 
 .about_me_right {
   display: flex;
-  width: 100%;
-  padding-top: 40px;
-  height: 100%;
+  width: 36%;
+  padding-bottom: 130px;
+  min-width: 450px;
+  z-index: 5;
 
   .img_circles {
     border-radius: 100%;
@@ -73,7 +76,6 @@
 .color_line_green {
   display: flex;
   flex-direction: row;
-
 
   &:after {
     content: "";

@@ -36,13 +36,12 @@ $teal: #005050;
   font-weight: 400;
   font-size: 23px;
   line-height: 120%;
-  color:white;
+  color: white;
   border: none;
   cursor: pointer;
   transition: all 215ms ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   &:hover {
     transition: all 215ms ease-in-out;
@@ -106,6 +105,10 @@ $teal: #005050;
 }
 
 //  <--- GLOBALS ----------------------------------->
+
+.mb-20 {
+  margin-bottom: 20px;
+}
 
 .alink {
   text-decoration: none;
@@ -202,17 +205,9 @@ $teal: #005050;
       position: absolute;
       right: 0;
       top: 800px;
-      z-index: 1;
+      z-index: 4;
       filter: opacity(80%);
     }
-
-    // .green_left {
-    //   position: absolute;
-    //   left: 0px;
-    //   top: 1700px;
-    //   z-index: 0;
-    //   filter: opacity(80%);
-    // }
 
     .purple_free {
       position: absolute;
@@ -352,42 +347,51 @@ $teal: #005050;
   }
 }
 
-@media (max-width: 1024px) {
-  body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    /* for Internet Explorer, Edge */
-    overflow-y: scroll;
-    /* for Firefox */
+@media screen and (max-width: 1024px) {
+  .scroll_down {
+    display: none !important;
   }
 
-  body::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera */
+  .profile_image {
+    left: -100px !important;
+  }
+
+  .line_box {
+    bottom: 50px !important;
+  }
+
+  .main {
+    background-size: contain !important;
+    background-position: bottom left !important;
+    .title {
+      position: absolute;
+      right: 60px !important;
+
+      .btn {
+        display: none;
+      }
+
+      .title_child {
+        padding-right: 0px !important;
+      }
+
+      .name {
+        font-size: 4vw !important;
+      }
+
+      .jobtitle {
+        margin-top: -10px;
+        font-size: 2.4vw !important;
+        color: $brightblue;
+        background-clip: text;
+      }
+    }
   }
 
   .content .navigation {
     padding-left: 30px;
     padding-right: 30px;
     margin: unset !important;
-  }
-
-  .main {
-    .title {
-      right: -40px;
-    }
-
-    .portrait_over {
-      top: 0;
-      left: 10px;
-      bottom: unset;
-    }
-
-    .portrait {
-      top: 0;
-      left: 10px;
-      bottom: unset;
-    }
   }
 
   .scroll_down {
@@ -400,90 +404,71 @@ $teal: #005050;
     }
   }
 
-  .about_me_right {
-    display: none;
-  }
-
   .about_me_left {
-    width: 100%;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-bottom: unset;
-    padding-top: 160px;
-
     .about_text {
-      align-items: unset;
-      margin-right: unset;
-      min-width: unset;
-      max-width: unset;
+      margin-right: 40px !important;
     }
   }
 
-  // .skills {
-  //   justify-content: center !important;
-  //   padding-left: unset !important;
+  .about_me_right {
+    align-items: center !important;
+    justify-content: center !important;
+  }
 
-  //   .skills_list {
-  //     width: unset !important;
-  //     margin-top: unset !important;
-  //     padding-left: 30px;
-  //     padding-right: 30px;
-  //   }
-
-  //   .skills_text {
-  //     width: unset !important;
-  //   }
+  // .pl-100 {
+  //   padding-right: 50px;
   // }
 
-  .color_line_green {
-    display: none;
-  }
+  .portfolio-content {
+    .portfolio {
+      padding-left: unset;
 
-  .pl-100 {
-    padding-right: 50px;
-  }
+      .portf-title {
+        margin-left: unset;
+      }
 
-  .portfolio {
-    padding-left: unset;
+      .t3 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
 
-    .portf-title {
-      margin-left: unset;
-    }
-
-    .portfolio_list {
-      margin-top: unset;
-      margin-right: unset;
-      display: flex;
-      align-items: center;
-
-      .fix_right {
+      .portfolio_list {
+        margin-top: unset;
+        margin-right: unset;
+        display: flex;
         align-items: center;
-      }
 
-      .txt_block {
-        padding-top: unset;
-        text-align: center;
-        align-items: center;
-      }
-
-      .txt_block_right {
-        padding-top: unset;
-        text-align: center;
-      }
-
-      .portfolio_child {
-        flex-direction: column;
-
-        .pr-100_img {
-          padding-right: unset;
+        .fix_right {
+          align-items: center;
         }
-      }
 
-      .portfolio_child_reverse {
-        flex-direction: column-reverse;
+        .txt_block {
+          padding-top: unset;
+          text-align: center;
+          align-items: center;
+        }
 
-        .pr-100_img {
-          padding-right: unset;
+        .txt_block_right {
+          padding-top: unset;
+          text-align: center;
+        }
+
+        .portfolio_child {
+          flex-direction: column;
+          margin-bottom: 40px;
+
+          .pr-100_img {
+            padding-right: unset;
+          }
+        }
+
+        .portfolio_child_reverse {
+          flex-direction: column-reverse;
+          margin-bottom: 40px;
+
+          .pr-100_img {
+            padding-right: unset;
+          }
         }
       }
     }
@@ -529,25 +514,149 @@ $teal: #005050;
   .purple_left {
     bottom: 150px !important;
   }
+
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* for Internet Explorer, Edge */
+    overflow-y: scroll;
+    /* for Firefox */
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .about_content {
+    justify-content: center !important;
+  }
+
+  .about_me_left {
+    padding-left: unset !important;
+    width: unset !important;
+
+    .about_text {
+      min-width: unset !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+
+  .about_me_right {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 0px !important;
+    padding-left: 30% !important;
+    min-width: unset !important;
+  }
 }
 
 @media (max-width: 600px) {
-  .mtop40 {
-    margin-top: -120px;
+  .design_element {
+    img {
+      width: min-content !important;
+    }
   }
 
-  .line_mobile {
-    position: absolute;
-    bottom: 0;
-    top: unset;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    width: 100%;
-    height: 50%;
+  .profile_image {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: min-content !important;
+  }
+
+  .main {
+    background-size: cover !important;
+    background-position: unset !important;
+    .title {
+      right: unset !important;
+      left: 50% 50% !important;
+      bottom: 20px !important;
+      top: unset !important;
+
+      .title_child {
+        padding-right: 0px !important;
+      }
+
+      .name {
+        font-size: 50px !important;
+      }
+
+      .jobtitle {
+        font-size: 30px !important;
+        color: $brightblue;
+      }
+    }
+  }
+
+  .line_box {
+    display: none !important;
+  }
+
+  .about_me_left { 
+    .about_text {
+      margin-right: 0px !important;
+      .title {
+        font-size: 60px!important;
+      }
+    }
+  }
+
+  .about_me_right {
+    padding-left: 40px !important;
+  }
+
+  .skills_main {
+    padding-bottom: unset !important;
+
+    .skills {
+      padding-left: unset !important;
+
+      padding-top: unset !important;
+
+      .title {
+        font-size: 60px !important;
+      }
+
+      .subtitle {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      .skills_list {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: unset;
+        margin-top: 80px;
+        max-width: 800px;
+
+        div {
+          width: 50px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .portfolio-content {
+    .portfolio {
+      padding-left: unset !important;
+      .portf-title {
+        .title {
+          font-size: 60px !important;
+        }
+      }
+    }
+  }
+
+  .mtop40 {
+    margin-top: -120px;
   }
 
   .content {
@@ -570,80 +679,8 @@ $teal: #005050;
         margin-top: 10px;
       }
 
-      .line_box {
-        bottom: 0;
-        display: none;
-      }
-
-      .line_mobile {
-        top: 280px;
-      }
-
-      .title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        left: 0px;
-        right: 0px;
-        top: 410px;
-        bottom: unset;
-
-        .btn {
-          display: none;
-        }
-
-        .title_child {
-          padding-right: 10px;
-
-          .name {
-            padding-right: unset;
-            font-size: 11.5vw;
-          }
-
-          .jobtitle {
-            padding-right: unset;
-            font-size: 7vw;
-            margin-top: -5px;
-          }
-
-          .iam {
-            text-indent: -4px;
-            font-size: 9vw;
-          }
-        }
-      }
-
       .title_margin {
         margin-bottom: 0px;
-      }
-
-      .portrait_over {
-        top: 180px;
-        left: 50%;
-        bottom: unset;
-        transform: translate(-50%, -50%);
-
-        img {
-          max-width: 200px;
-          max-height: 336px;
-          min-width: 200px;
-          min-height: 336px;
-        }
-      }
-
-      .portrait {
-        top: 180px;
-        left: 50%;
-        bottom: unset;
-        transform: translate(-50%, -50%);
-
-        img {
-          height: unset;
-          max-width: 200px;
-          max-height: 336px;
-          min-width: 200px;
-          min-height: 336px;
-        }
       }
     }
 
@@ -670,95 +707,9 @@ $teal: #005050;
       bottom: 40px;
     }
 
-    .about_me_left {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 100px;
-
-      .about_text {
-        min-width: unset;
-
-        .title_txt {
-          font-size: 45px;
-          margin-bottom: 20px;
-        }
-
-        .subtitle_txt {
-          font-size: 16px;
-          margin-bottom: 20px;
-        }
-      }
-    }
-
-    .skills {
-      padding-left: unset !important;
-      padding-bottom: unset !important;
-
-      .skills_list {
-        min-width: unset !important;
-        width: unset !important;
-        gap: 70px !important;
-
-        div {
-          font-weight: 400;
-        }
-        img {
-          width: 50px;
-        }
-      }
-
-      .skills_text {
-        justify-content: center !important;
-        width: unset !important;
-
-        .skills_setup {
-          font-size: 45px !important;
-          width: 77% !important;
-        }
-      }
-    }
-
-    .pl-100 {
-      padding-right: unset;
-    }
-
-    .portfolio {
-      .portfolio_list {
-        margin-top: -110px;
-
-        .portfolio_child {
-          transform-origin: center;
-          transform: scale(75%);
-          margin-bottom: -120px;
-        }
-
-        .portfolio_child_reverse {
-          transform-origin: center;
-          transform: scale(75%);
-          margin-bottom: -120px;
-        }
-
-        .txt_block {
-          width: unset;
-        }
-
-        .txt_block_right {
-          width: unset;
-        }
-      }
-
-      .portf-title {
-        .title_txt {
-          font-size: 45px;
-          width: 80%;
-        }
-
-        .subtitle_txt {
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
-    }
+    // .pl-100 {
+    //   padding-right: unset;
+    // }
 
     .contact_main {
       .up {
@@ -770,11 +721,11 @@ $teal: #005050;
       width: 100%;
 
       .contact_titles {
-        margin-top: 100px;
+        margin-top: unset;
         margin-bottom: 50px;
 
         span {
-          font-size: 45px;
+          font-size: 60px;
           margin-left: 10px;
         }
       }
@@ -801,7 +752,7 @@ $teal: #005050;
     }
 
     .footer {
-      height: 380px;
+      height: 200px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -810,14 +761,16 @@ $teal: #005050;
       padding-right: unset;
 
       span {
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 300;
       }
 
       .footer_child {
-        flex-direction: column;
+        flex-direction: unset;
 
         img {
           margin-right: unset;
+          width: 24px;
         }
 
         a {
@@ -826,8 +779,8 @@ $teal: #005050;
           justify-content: center;
           text-align: center;
           margin-top: 10px;
-          margin-left: 20px;
-          margin-right: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
         }
 
         .footer_links {
@@ -840,9 +793,6 @@ $teal: #005050;
   .impressum_main {
     padding: 20px !important;
     margin-top: 80px !important;
-  }
-
-  .background_dots {
-    display: none;
+    font-weight: 200;
   }
 }
