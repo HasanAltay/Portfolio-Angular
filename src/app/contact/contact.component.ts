@@ -4,10 +4,10 @@ import { AppComponent } from '../app.component';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  constructor(private appComponent: AppComponent) { }
+  constructor(private appComponent: AppComponent) {}
   setActive(num: number) {
     this.appComponent.setActive(num);
   }
@@ -17,13 +17,13 @@ export class ContactComponent {
   }
 
   scrollToContact() {
-    window.location.href='#contact'; 
+    window.location.href = '#contact';
     return false;
   }
 
   reload() {
     setTimeout(function () {
-      location.reload()
-  }, 100);
+      location.reload();
+    }, 100);
   }
 }

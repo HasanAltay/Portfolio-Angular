@@ -319,12 +319,34 @@ $teal: #005050;
   }
 
   .footer {
-    height: 200px;
-    padding-left: 30px;
-    padding-right: 30px;
+    height: 230px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
-    span {
-      font-size: 16px;
+    .footer_child {
+      flex-direction: unset;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        img {
+          margin-right: unset;
+          width: 24px;
+        }
+      }
+
+      .footer_links {
+        flex-direction: unset;
+      }
     }
   }
 
@@ -531,14 +553,12 @@ $teal: #005050;
     }
 
     .contact_main {
-      .up {
-        bottom: -70px;
-        margin-right: 20px;
-      }
-
-      margin-bottom: 100px;
+      padding-right: unset;
+      margin-bottom: 80px;
       width: 100%;
-
+      .up {
+        right: 20px;
+      }
       .contact_titles {
         margin-top: unset;
         margin-bottom: 50px;
@@ -570,48 +590,10 @@ $teal: #005050;
       }
     }
 
-    .footer {
-      height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      padding-left: unset;
-      padding-right: unset;
-
-      span {
-        font-size: 14px;
-        font-weight: 300;
-      }
-
-      .footer_child {
-        flex-direction: unset;
-
-        img {
-          margin-right: unset;
-          width: 24px;
-        }
-
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          margin-top: 10px;
-          margin-left: 10px;
-          margin-right: 10px;
-        }
-
-        .footer_links {
-          flex-direction: unset;
-        }
-      }
+    .impressum_main {
+      padding: 20px !important;
+      margin-top: 80px !important;
+      font-weight: 200;
     }
-  }
-
-  .impressum_main {
-    padding: 20px !important;
-    margin-top: 80px !important;
-    font-weight: 200;
   }
 }

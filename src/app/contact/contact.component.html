@@ -35,13 +35,25 @@
         method="POST"
         data-aos="fade-left"
       >
-        <input name="name" placeholder="Your name" required />
-        <input name="email" placeholder="Your email" required />
+        <input
+          name="name"
+          placeholder="Your name"
+          required
+          autocomplete="name"
+          maxlength="30"
+        />
+        <input
+          name="email"
+          placeholder="Your email"
+          required
+          autocomplete="email"          
+          maxlength="100"
+        />
         <textarea
           placeholder="Your message"
           name="message"
           required
-          maxlength="2500"
+          maxlength="2600"
         ></textarea>
         <button type="submit" class="btn">Send message :)</button>
       </form>

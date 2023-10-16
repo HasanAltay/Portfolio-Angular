@@ -12,10 +12,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     AOS.init({
       delay: 100,
-      duration: 800,
-      offset: 500,
+      duration: 700,
+      offset: 380,
     });
-    this.scrollToTop();
   }
 
   setActive(num: number) {

@@ -2,7 +2,7 @@
 
 .content {
   position: relative;
-  height: 100%;
+  height: calc(100% - 290px);
 }
 
 .contact_main {
@@ -10,8 +10,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 200px;
-  margin-right: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 
   .line_purple_left_contact {
     display: flex;
@@ -25,7 +27,7 @@
   .contact_titles {
     display: flex;
     align-items: center;
-    margin-bottom: 85px;
+    margin-bottom: 40px;
 
     span {
       font-weight: 700;
@@ -66,12 +68,15 @@
       text-indent: 20px;
 
       &::placeholder {
-        color: white;
+        color: $lighter_blue;
         font-family: "Poppins";
         font-weight: 400;
         font-size: 16px;
         line-height: 120%;
         text-indent: 20px;
+      }
+      &:active {
+        background-color: rgba(121, 121, 121, 0.26);
       }
     }
 
@@ -91,16 +96,18 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 120%;
-      text-indent: 20px;
       padding-top: 15px;
+      padding-left: 20px;
 
       &::placeholder {
-        color: white;
+        color: $lighter_blue;
         font-family: "Poppins";
         font-weight: 400;
         font-size: 16px;
         line-height: 120%;
-        text-indent: 20px;
+      }
+      &:active {
+        background-color: rgba(121, 121, 121, 0.26);
       }
     }
   }
@@ -113,8 +120,8 @@
 
 .up {
   position: absolute;
-  bottom: -150px;
-  right: 0px;
+  bottom: 20px;
+  right: 100px;
   cursor: pointer;
   transition: all 215ms ease-in-out;
   z-index: 10;
