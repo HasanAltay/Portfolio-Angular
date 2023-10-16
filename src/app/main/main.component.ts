@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { AppComponent } from '../app.component';
 
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -21,5 +20,13 @@ export class MainComponent {
   scrollToContact() {
     window.location.href='#contact'; 
     return false;
-  }
+  } 
 }
+
+// Hide eyecatcher when scrolled down 100px
+window.addEventListener("scroll", () => {
+  const eyecatcher = document.querySelector(".eyecatcher") as HTMLElement;
+  if (window.scrollY > 290) {
+    eyecatcher.classList.add("hidden");
+  }
+});

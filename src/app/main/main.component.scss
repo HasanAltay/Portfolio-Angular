@@ -7,7 +7,7 @@
   .main_bg_glow {
     position: absolute;
     right: calc(-40% + 700px);
-    bottom: 70px;
+    bottom: 0px;
     display: flex;
     justify-content: left;
     align-items: flex-end;
@@ -44,14 +44,15 @@
     z-index: 2;
 
     img {
-      width: 100%;
+      width: 100vw;
+      min-width: 100vw;
       height: 100%;
     }
   }
 
   .profile_image {
     position: absolute;
-    right: calc(-40% + 470px);
+    right: calc(-40% + 500px);
     bottom: 0px;
     display: flex;
     justify-content: left;
@@ -98,13 +99,48 @@
         background-clip: text;
       }
     }
-  }
 
-  .line_box {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    z-index: 4;
+    .line_box {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+      z-index: 8;
+
+      .mail {
+        height: 100%;
+        display: flex;
+        z-index: 3;
+
+        .other_links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 440px;
+
+          .line_purple_left {
+            background-color: $brightblue;
+            height: 4px;
+            border-radius: 0px 20px 20px 0px;
+            width: 200px;
+          }
+
+          a {
+            display: flex;
+          }
+
+          img {
+            cursor: pointer;
+            transition: all 215ms ease-in-out;
+            height: 35px;
+
+            &:hover {
+              transform: scale(1.3);
+              transition: all 215ms ease-in-out;
+            }
+          }
+        }
+      }
+    }
   }
 
   @keyframes scrollUpDown {
@@ -120,12 +156,14 @@
   }
 
   .eyecatcher {
-    position: absolute;
+    position: fixed;
     right: 100px;
     bottom: 100px;
     display: flex;
     z-index: 6;
     width: auto;
+    opacity: 1;
+    transition: opacity 0.5s;
 
     .scrollbar_border {
       border: 2px solid white;
@@ -150,5 +188,10 @@
         animation: scrollUpDown 2s linear infinite;
       }
     }
+  }
+
+  .eyecatcher.hidden {
+    opacity: 0;
+    pointer-events: none;
   }
 }

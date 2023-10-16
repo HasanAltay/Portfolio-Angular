@@ -5,20 +5,16 @@ import * as AOS from 'aos';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'my Portfolio';
 
   ngOnInit(): void {
-    AOS.init(
-      {
-        delay: 100,
-        duration: 800,
-        offset: 500,
-
-      }
-    );
+    AOS.init({
+      delay: 100,
+      duration: 800,
+      offset: 500,
+    });
     this.scrollToTop();
   }
 
@@ -40,9 +36,9 @@ export class AppComponent implements OnInit{
   scrollToTop() {
     window.scrollTo(0, 0);
   }
-  
+
   scrollToContact() {
-    window.location.href='#contact'; 
+    window.location.href = '#contact';
     return false;
   }
 }
