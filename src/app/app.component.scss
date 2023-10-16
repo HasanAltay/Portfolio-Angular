@@ -405,6 +405,13 @@ $teal: #005050;
     bottom: 50% !important;
   }
 
+  .main_bg_glow {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: min-content !important;
+  }
+
   .design_element {
     img {
       width: min-content !important;
@@ -418,26 +425,31 @@ $teal: #005050;
     width: min-content !important;
   }
 
-  .main {
-    background-size: cover !important;
-    background-position: unset !important;
-    .title {
-      right: unset !important;
-      left: 50% 50% !important;
-      bottom: 20px !important;
-      top: unset !important;
+  .content {
+    margin-top: -30px;
 
-      .btn {
-        display: none;
-      }
+    .main {
+      background-size: cover !important;
+      background-position: unset !important;
+      
+      .title {
+        right: unset !important;
+        left: 50% 50% !important;
+        bottom: 60px!important;
+        top: unset !important;
 
-      .name {
-        font-size: 50px !important;
-      }
+        .btn {
+          display: none;
+        }
 
-      .jobtitle {
-        font-size: 30px !important;
-        color: $brightblue;
+        .name {
+          font-size: 50px !important;
+        }
+
+        .jobtitle {
+          font-size: 30px !important;
+          color: $brightblue;
+        }
       }
     }
   }
