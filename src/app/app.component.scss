@@ -16,17 +16,6 @@ $teal: #005050;
 
 //  <--- PRESET BUTTONS ----------------------------------->
 
-// .btn_pos {
-//   position: absolute;
-//   top: 220px;
-//   left: calc(50% - 30px);
-//   z-index: 10;
-// }
-
-// .btn_margin {
-//   margin-top: 60px;
-// }
-
 .btn {
   width: -moz-fit-content;
   width: fit-content;
@@ -84,10 +73,6 @@ $teal: #005050;
   }
 }
 
-// .mb-100 {
-//   margin-bottom: 100px;
-// }
-
 .logo {
   cursor: pointer;
   img {
@@ -102,26 +87,9 @@ $teal: #005050;
   }
 }
 
-// .fd-column {
-//   flex-direction: column;
-// }
-
 .mtop40 {
   margin-top: 50px;
 }
-
-// .font23 {
-//   font-weight: 400;
-//   font-size: 23px;
-// }
-
-// .title_margin {
-//   margin-bottom: 220px;
-// }
-
-// .d-flex {
-//   display: flex;
-// }
 
 .font32 {
   font-weight: 700;
@@ -129,25 +97,13 @@ $teal: #005050;
   line-height: 120%;
 }
 
-// .pl-100 {
-//   padding-right: 100px;
-// }
-
 .pr-100_img {
   padding-right: 90px;
 }
 
-// .pl-100_img {
-//   padding-left: 90px;
-// }
-
 .txt-center {
   text-align: center;
 }
-
-// .mb-10 {
-//   margin-bottom: 10px;
-// }
 
 .z1 {
   z-index: 1;
@@ -204,31 +160,11 @@ $teal: #005050;
 
 //  <--- DATA PROTECTION AND IMPRINT ----------------------------------->
 
-// .success_main {
-//   margin: 0 auto;
-//   font-weight: 700;
-//   line-height: 120%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: 8vw;
-// }
-
 .success_main span {
   text-align: center;
   margin-top: 10vw;
   margin-bottom: 10vw;
 }
-
-// .success_box {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   img {
-//     margin-top: 10vw;
-//   }
-// }
 
 .impressum_main {
   margin-top: 10px;
@@ -441,9 +377,6 @@ $teal: #005050;
     padding-left: 30% !important;
     min-width: unset !important;
   }
-}
-
-@media screen and (max-width: 800px) {
 }
 
 @media screen and (max-width: 600px) {
