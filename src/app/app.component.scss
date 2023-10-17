@@ -18,7 +18,7 @@ $teal: #005050;
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: $lighter_blue;
   font-weight: 400;
   font-size: 23px;
@@ -27,8 +27,6 @@ $teal: #005050;
   border: none;
   cursor: pointer;
   transition: all 215ms ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   &:hover {
     transition: all 215ms ease-in-out;
@@ -58,18 +56,18 @@ $teal: #005050;
 
 //  <--- GLOBALS ----------------------------------->
 
-.mb-20 {
-  margin-bottom: 20px;
-}
+// .mb-20 {
+//   margin-bottom: 20px;
+// }
 
-.alink {
-  text-decoration: none;
-  color: white;
+// .alink {
+//   text-decoration: none;
+//   color: white;
 
-  &:hover {
-    text-decoration: underline 3px solid;
-  }
-}
+//   &:hover {
+//     text-decoration: underline 3px solid;
+//   }
+// }
 
 .logo {
   cursor: pointer;
@@ -427,7 +425,7 @@ $teal: #005050;
 
   .content {
     margin-top: -30px;
-
+  
     .main {
       background-size: cover !important;
       background-position: unset !important;
@@ -435,7 +433,7 @@ $teal: #005050;
       .title {
         right: unset !important;
         left: 50% 50% !important;
-        bottom: 60px !important;
+        bottom: 80px !important;
         top: unset !important;
 
         .btn {
@@ -469,13 +467,12 @@ $teal: #005050;
   }
 
   .about_me_right {
-    padding-left: 20px !important;
-
+    padding-left: 50px !important;
     .img_circles {
       border-radius: 100%;
       border: solid 4px $lighter_blue;
       height: auto !important;
-      width: calc(100vw - 40px) !important;
+      width: calc(100vw - 100px) !important;
     }
   }
 
@@ -484,7 +481,7 @@ $teal: #005050;
 
     .skills {
       padding-left: unset !important;
-      padding-top: unset !important;
+      padding-top: 100px !important;
 
       .title {
         font-size: 48px !important;
@@ -502,7 +499,7 @@ $teal: #005050;
           width: 50px;
           height: 100px;
           font-weight: 300;
-          font-size: 14px !important;	
+          font-size: 14px !important;
         }
 
         img {
@@ -530,15 +527,15 @@ $teal: #005050;
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        width: 100%!important;
+        width: 100% !important;
       }
-  
+
       .txt_block_right {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: right;
-        width: 100%!important;
+        width: 100% !important;
       }
 
       .portfolio_list {

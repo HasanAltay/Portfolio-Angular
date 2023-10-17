@@ -21,6 +21,7 @@ export class NavigationComponent {
 
   toggleBurger() {
     this.isShown = !this.isShown;
+    let burger_icon = document.getElementById('burger_icon');
   }
 
   hide() {

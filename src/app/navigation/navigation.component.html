@@ -25,7 +25,7 @@
       viewBox="0 0 100 100"
       width="70"
       height="70"
-      onclick="classList.toggle('active')"
+      [ngClass]="{'active': isShown}"
       (click)="toggleBurger()"
     >
       <path
@@ -42,18 +42,30 @@
       />
     </svg>
 
-    <div [hidden]="!isShown" class="burger_dropdown_menu" id="dop_down_menu">
+    <div [hidden]="!isShown" class="burger_dropdown_menu" id="drop_down_menu">
       <div class="burger_btns">
-        <div id="about_btn" (click)="hide()">
+        <div
+          id="about_btn"
+          (click)="toggleBurger()"
+        >
           <a href="#about_me">About me</a>
         </div>
-        <div id="skills_btn" (click)="hide()">
+        <div
+          id="skills_btn"
+          (click)="toggleBurger()"
+        >
           <a href="#skills">Skills</a>
         </div>
-        <div id="portfolio_btn" (click)="hide()">
+        <div
+          id="portfolio_btn"
+          (click)="toggleBurger()"
+        >
           <a href="#portfolio">Portfolio</a>
         </div>
-        <div id="portfolio_btn" (click)="hide()">
+        <div
+          id="contact_btn"
+          (click)="toggleBurger()"
+        >
           <a href="#contact">Contact</a>
         </div>
       </div>
