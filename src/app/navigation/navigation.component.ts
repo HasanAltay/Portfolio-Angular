@@ -20,9 +20,6 @@ export class NavigationComponent {
   }
 
   toggleBurger() {
-    const burger_dropdown_menu = document.getElementById(
-      'burger_dropdown_menu'
-    );
     this.isShown = !this.isShown;
   }
 

@@ -59,7 +59,8 @@
       }
 
       img {
-        width: 48px;
+        width: auto;
+        height: 48px;
         margin-bottom: 10px;
         &:hover {
           animation: shake_it 333ms normal forwards ease-in-out;

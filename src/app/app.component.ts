@@ -7,6 +7,9 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  getElementById(arg0: string) {
+    throw new Error('Method not implemented.');
+  }
   title = 'my Portfolio';
 
   ngOnInit(): void {
@@ -14,6 +17,7 @@ export class AppComponent implements OnInit {
       delay: 100,
       duration: 700,
       offset: 380,
+      once: true
     });
   }
 

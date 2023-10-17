@@ -431,11 +431,11 @@ $teal: #005050;
     .main {
       background-size: cover !important;
       background-position: unset !important;
-      
+
       .title {
         right: unset !important;
         left: 50% 50% !important;
-        bottom: 60px!important;
+        bottom: 60px !important;
         top: unset !important;
 
         .btn {
@@ -461,14 +461,22 @@ $teal: #005050;
   .about_me_left {
     .about_text {
       margin-right: 0px !important;
+      padding-bottom: 0px !important;
       .title {
-        font-size: 60px !important;
+        font-size: 48px !important;
       }
     }
   }
 
   .about_me_right {
-    padding-left: 40px !important;
+    padding-left: 20px !important;
+
+    .img_circles {
+      border-radius: 100%;
+      border: solid 4px $lighter_blue;
+      height: auto !important;
+      width: calc(100vw - 40px) !important;
+    }
   }
 
   .skills_main {
@@ -476,11 +484,10 @@ $teal: #005050;
 
     .skills {
       padding-left: unset !important;
-
       padding-top: unset !important;
 
       .title {
-        font-size: 60px !important;
+        font-size: 48px !important;
       }
 
       .subtitle {
@@ -489,28 +496,62 @@ $teal: #005050;
       }
 
       .skills_list {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        flex-wrap: wrap;
-        gap: unset;
-        margin-top: 80px;
-        max-width: 800px;
+        gap: 25px !important;
 
         div {
           width: 50px;
-          font-weight: 400;
+          height: 100px;
+          font-weight: 300;
+          font-size: 14px !important;	
+        }
+
+        img {
+          height: 36px !important;
         }
       }
     }
   }
 
   .portfolio-content {
+    padding-bottom: unset !important;
     .portfolio {
       padding-left: unset !important;
       .portf-title {
         .title {
-          font-size: 60px !important;
+          font-size: 48px !important;
+        }
+        .subtitle {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+      .txt_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        width: 100%!important;
+      }
+  
+      .txt_block_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        width: 100%!important;
+      }
+
+      .portfolio_list {
+        .portfolio_child {
+          div img {
+            width: 100%;
+          }
+        }
+
+        .portfolio_child_reverse {
+          div img {
+            width: 100%;
+          }
         }
       }
     }
@@ -548,9 +589,9 @@ $teal: #005050;
       right: 0;
       background-color: #18243b;
       padding-left: 20px;
-      padding-right: 20px;
+      padding-right: 0px;
 
-      .burger_icon {
+      .ham {
         display: flex;
       }
 
@@ -570,6 +611,7 @@ $teal: #005050;
       width: 100%;
       .up {
         right: 20px;
+        bottom: 0px;
       }
       .contact_titles {
         margin-top: unset;
